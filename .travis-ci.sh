@@ -40,7 +40,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Starting to update gh-pages\n"
 
   #copy data we're interested in to other place
-  cp index.html $HOME/index.html
+  #cp index.html $HOME/index.html
   cp ladder.js $HOME/ladder.js
   cp ladder.json $HOME/ladder.json
   cp ladder.png $HOME/ladder.png
@@ -56,7 +56,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   #go into directory and copy data we're interested in to that directory
   cd gh-pages
-  cp -f $HOME/index.html .
+  #cp -f $HOME/index.html .
   cp -f $HOME/ladder.js .
   cp -f $HOME/ladder.json .
   cp -f $HOME/ladder.png .
